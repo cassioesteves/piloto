@@ -1,8 +1,21 @@
-<input type = "text" name = "usuario" required>
+function Login() {
 
-<input type = "password" name = "senha" required>
-
-{
+    const usuario = document.getElementsByName('usuario')[0].value;
+    usuario=usuario.toLowerCase();
+    const senha= document.getElementsByName('senha')[0].value;
+    senha=senha.toLowerCase();
+    if (usuario=="admin" && senha=="admin") {
 
          if(usuario == "" || senha == "") { 
              alert("Os campos usuário e senha são obrigatório"); }
+
+             else (usuario=="admin" && senha=="admin"){
+                 alert("Login realizado com sucesso!")
+
+             }
+
+
+             
+    }
+    
+  }
